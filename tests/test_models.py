@@ -223,6 +223,7 @@ class TestProductModel(unittest.TestCase):
                 self.assertEqual(product.price, price)
 
     def test_deserialize(self):
+        """It should Properly create a obj from dict"""
         product = ProductFactory()
         product_info = {
             "name": "Ribbon",
